@@ -1,0 +1,261 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+.logo {
+    margin-top: 0px;
+    margin-left: 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+}
+nav a {
+    margin-left: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.container {
+    display: flex;
+    margin-top: 250px;
+    padding: 0 20px;
+    position: relative;
+}
+.left-column {
+    flex: 1;
+}
+.right-column {
+    flex: 1;
+}
+.name {
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    line-height: 1.5;
+    padding-left: 100px;
+}
+.subtitle {
+    padding-left: 100px;
+    font-weight: light;
+    font-size: 24px;
+    color: gray;
+    margin-top: 10px;
+}
+.info-text {
+    font-size: 24px;
+    color: black;
+    line-height: 1.5;
+    margin-top: 50px;
+}
+.language-switcher {
+    margin-left: 400px;
+    margin-right: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    color: grey;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    nav {
+        position: static;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: white;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .language-switcher {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001; 
+    }
+
+    .menu-toggle.open + nav {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .name {
+        font-size: 40px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .info-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .info-text {
+        font-size: 16px;
+    }
+}
+
+/* Основное меню */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -70%;
+    width: 70%;
+    height: 100%;
+    background-color: #FFFFFF;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/* Закрытие меню */
+.menu.open {
+    left: 0;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #333333;
+    cursor: pointer;
+    z-index: 1100;
+    display: none;
+    font-weight: bold;
+}
+
+.menu-toggle.open {
+    display: none;
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    font-size: 20px;
+    color: #333333;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+.menu-list li:hover {
+    color: #000000;
+}
+
+.menu-list li i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.divider {
+    border-top: 1px solid #E0E0E0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 70%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-list li {
+        font-size: 18px;
+        color: #333333;
+        padding: 10px 0;
+    }
+
+    .menu-list li:hover i,
+    .menu-list li:hover {
+        color: #000000;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.menu-list li:hover {
+    color: #000000;
+}
