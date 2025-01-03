@@ -1,36 +1,47 @@
 import React, { useState } from 'react';
-import Header from './Header';
-import Menu from './Menu';
-import './App.css';
+import './App.css'; // Подключите ваш CSS
 
-const App = () => {
+function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => setMenuOpen(prevState => !prevState);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
-    <div className="App">
-      <Header toggleMenu={toggleMenu} menuOpen={menuOpen} />
-      <div className={`container ${menuOpen ? 'menu-open' : ''}`}>
-        <div className="left-column">
-          <div className="name">Daniil<br />Sazanovich</div>
-          <div className="subtitle">Таргетолог-Маркетолог</div>
+    <div>
+      <header>
+        <div className="logo">
+          <img src="logo.png" alt="Logo" />
         </div>
-        <div className="right-column">
-          <div className="info-text">
-            Я профессионал с более чем 5-летним опытом работы в
-            таргетированной рекламе. За это время я успешно реализовал
-            более 20 проектов в самых разных нишах.
-            Моя специализация — настройка и ведение рекламы в Facebook и Instagram.
-            Я помогаю бизнесам привлекать клиентов, повышать продажи и
-            достигать своих целей с помощью эффективных рекламных кампаний.
+        <div className="menu-toggle" onClick={toggleMenu}>
+          ☰
+        </div>
+        <nav className={`menu ${menuOpen ? 'open' : ''}`}>
+          <div className="close-menu" onClick={toggleMenu}>
+            ✕
+          </div>
+          <ul className="menu-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div className="container">
+          <div className="left-column">
+            <h1 className="name">Your Name</h1>
+            <h2 className="subtitle">Your Subtitle</h2>
+          </div>
+          <div className="right-column">
+            <p className="info-text">Some descriptive text here...</p>
           </div>
         </div>
-      </div>
-
-      <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
+      </main>
     </div>
   );
-};
+}
 
 export default App;
