@@ -41,6 +41,10 @@ body {
     margin-top: 250px;
     padding: 0 20px;
     position: relative;
+    justify-content: center; /* Центрируем контент */
+    max-width: 1200px; /* Ограничиваем максимальную ширину */
+    margin-left: auto; /* Выравнивание по центру */
+    margin-right: auto; /* Выравнивание по центру */
   }
   
   .left-column {
@@ -149,6 +153,7 @@ body {
     .container {
       flex-direction: column;
       margin-top: 100px;
+      max-width: 100%; 
     }
   
     .name {
