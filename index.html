@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="fag.css">
+    <link rel="stylesheet" href="form.css">
 
     <link rel="icon" href="/imeges/bezfona.png" type="image/x-icon">
 
@@ -168,10 +169,27 @@
             конверсий, стоимость за клик (CPC), стоимость за конверсию (CPA), а также через<br> 
              анализ возврата инвестиций (ROI).</p>
       </div>
-
-  </section>
-  
-
+      <div class="form-container">
+        <h2 class="form-title">Свяжитесь со мной</h2>
+        <p class="form-description">Буду рад вашим предложениям.</p>
+        
+        <form class="contact-form" action="submit.php" method="POST">
+          <div class="form-row">
+            <input type="text" name="name" class="form-input" placeholder="Ваше имя" required />
+            <div class="line"></div>
+          </div>
+          <div class="form-row">
+            <input type="email" name="email" class="form-input" placeholder="Ваш email" required />
+            <div class="line"></div>
+          </div>
+          <textarea name="message" class="form-textarea" placeholder="Ваше сообщение" required></textarea>
+          <div class="line-messeg"></div>
+      
+          <button type="submit" class="form-button">Отправить</button>
+        </form>
+      </div>
+      
+      
   
     <script src="scripts.js"></script>
     <script src="slider.js"></script>
