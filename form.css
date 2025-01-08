@@ -20,7 +20,7 @@
   
   .form-row {
     display: flex;
-    flex-direction: column; /* изменено, чтобы линии располагались под полями ввода */
+    flex-direction: column; 
     gap: 4%;
     margin-bottom: 20px;
   }
@@ -32,7 +32,7 @@
     border-radius: 4px;
     font-size: 14px;
     box-sizing: border-box;
-    margin-bottom: 10px; /* добавлено пространство между полем ввода и линией */
+    margin-bottom: 10px; 
   }
   
   .line {

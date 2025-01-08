@@ -4,6 +4,9 @@ body {
     padding: 0;
     background-color: white;
 }
+html {
+    scroll-behavior: smooth;
+}
 header {
     display: flex;
     justify-content: space-between;
