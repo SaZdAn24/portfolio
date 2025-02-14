@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="form.css">
 
     <link rel="icon" href="/imeges/bezfona.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -170,32 +171,35 @@
                 анализ возврата инвестиций (ROI).</p>
         </div>
     </section>
+<div class="form-container">
+    <form id="contact-form" class="contact-form">
+        <h3>Онлайн-запись</h3>
+        <input type="text" name="from_name" placeholder="Ваше имя" required>
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+        <input type="hidden" name="to_name" value="She Wants Gdansk"> 
+        <button type="submit">Записаться</button>
+    </form>
+</div>
+
+<!-- Модальное окно подтверждения -->
+<div id="confirmation-modal" class="modal-thank">
+    <div class="modal-content-thank">
+        <span class="close-button-thank">&times;</span>
+        <h2>Спасибо!</h2>
+        <p>Ваше сообщение успешно отправлено. Мы скоро с вами свяжемся!</p>
+    </div>
+</div>
+
     
-    <div id="trial" class="form-container">
-        <h2 class="form-title" data-translate="form-title">Свяжитесь со мной</h2>
-        <p class="form-description" data-translate="form-description">Буду рад вашим предложениям.</p>
-        
-        <form class="contact-form" action="submit.php" method="POST">
-            <div class="form-row">
-                <input type="text" name="name" class="form-input" placeholder="Ваше имя" required data-translate="form-placeholder-name" />
-                <div class="line"></div>
-            </div>
-            <div class="form-row">
-                <input type="email" name="email" class="form-input" placeholder="Ваш email" required data-translate="form-placeholder-email" />
-                <div class="line"></div>
-            </div>
-            <textarea name="message" class="form-textarea" placeholder="Ваше сообщение" required data-translate="form-placeholder-message"></textarea>
-            <div class="line-messeg"></div>
-    
-            <button type="submit" class="form-button" data-translate="form-button">Отправить</button>
-        </form>
-    </div>    
       
     <script src="scripts.js"></script>
     <script src="slider.js"></script>
-    <script src="translate.js"></script>
-    <script src=""></script>
-
+    <!-- <script src="translate.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="formSubmitte.js"></script>
+    
 
 
 
