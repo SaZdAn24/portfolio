@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="fag.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="modalCard.css">
+
 
     <link rel="icon" href="/imeges/bezfona.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -73,47 +75,124 @@
         <div id="services" class="container-card">
             <h1 class="page-title" data-translate="services-title">Услуги</h1>
             <div class="card-grid">
-                <div class="card">
+                <div class="card" data-modal="modal-audit">
                     <img src="/imeges/card/eye.png" alt="Монитор с глазом" class="card-icon">
                     <h2 class="card-title" data-translate="card-audit-title">Аудит рекламного<br> кабинета</h2>
                     <p class="card-text" data-translate="card-audit-text">Включает анализ структуры кампаний,<br> эффективности таргетинга, креативов и<br> настроек бюджета.</p>
-                    <a href="#" class="card-button" data-translate="card-audit-button">Подробнее</a>
+                    <button class="card-button" data-modal-open>Подробнее</button>
                 </div>
-                <div class="card">
+                <div class="card" data-modal="modal-target">
                     <img src="/imeges/card/aim.png" alt="Профиль человека с кругами" class="card-icon">
                     <h2 class="card-title" data-translate="card-target-title">Настройка таргета FB<br> INST</h2>
                     <p class="card-text" data-translate="card-target-text">Включает анализ целевой аудитории,<br> разработку креативов, запуск рекламных кампаний<br> и их оптимизацию.</p>
-                    <a href="#" class="card-button" data-translate="card-target-button">Подробнее</a>
+                    <button class="card-button" data-modal-open>Подробнее</button>
                 </div>
-                <div class="card">
+                <div class="card" data-modal="modal-page-setup">
                     <img src="/imeges/card/lightning.png" alt="Молния" class="card-icon">
                     <h2 class="card-title" data-translate="card-prep-title">Подготовка страницы к<br> запуску рекламы</h2>
                     <p class="card-text" data-translate="card-prep-text">Включает проверку, что все элементы<br> подключены и работают корректно.</p>
-                    <a href="#" class="card-button" data-translate="card-prep-button">Подробнее</a>
+                    <button class="card-button" data-modal-open>Подробнее</button>
                 </div>
-                <div class="card">
+                <div class="card" data-modal="modal-page-branding">
                     <img src="/imeges/card/star.png" alt="Звезда" class="card-icon">
                     <h2 class="card-title" data-translate="card-branding-title">Branding</h2>
-                    <p class="card-text" data-translate="card-branding-text">We help startups to create their visual<br> identity, according to our marketing<br> research.</p>
-                    <a href="#" class="card-button" data-translate="card-branding-button">Learn More</a>
+                    <p class="card-text" data-translate="card-branding-text">Создание визуального образа<br> на основе маркетинговых исследований.</p>
+                    <button class="card-button" data-modal-open>Подробнее</button>
                 </div>
-                <div class="card">
+                <div class="card" data-modal="modal-page-photo">
                     <img src="/imeges/card/camera.png" alt="Камера" class="card-icon">
                     <h2 class="card-title" data-translate="card-shooting-title">Съёмка для рекламы</h2>
-                    <p class="card-text" data-translate="card-shooting-text">Включает разработку концепции, подбор<br> локации, создание сценария и проведение профессиональной съёмки.</p>
-                    <a href="#" class="card-button" data-translate="card-shooting-button">Подробнее</a>
+                    <p class="card-text" data-translate="card-shooting-text">Разработка концепции, подбор<br> локации и профессиональная съёмка.</p>
+                    <button class="card-button" data-modal-open>Подробнее</button>
                 </div>
-                <div class="card">
+                <div class="card" data-modal="modal-page-website">
                     <img src="/imeges/card/gadgets.png" alt="Монитор с устройствами" class="card-icon">
                     <h2 class="card-title" data-translate="card-site-title">Сайт</h2>
-                    <p class="card-text" data-translate="card-site-text">Включает полный цикл работ: от<br> разработки структуры до финального<br> запуска.</p>
-                    <a href="#" class="card-button" data-translate="card-site-button">Подробнее</a>
+                    <p class="card-text" data-translate="card-site-text">Полный цикл работ: от разработки структуры до финального запуска.</p>
+                    <button class="card-button" data-modal-open>Подробнее</button>
                 </div>
-            </div>     
+            </div>
         </div>
     </div>
-
-
+    
+    <!-- Модальные окна -->
+    <div class="modals">
+        <div id="modal-audit" class="modal-overlay-hidden">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Аудит рекламного кабинета</h2>
+                <p class="modal-description">Наш аудит включает:</p>
+                <ul>
+                  <li>Подробный анализ структуры рекламных кампаний.</li>
+                  <li>Проверку эффективности таргетинга и креативов.</li>
+                  <li>Оптимизацию бюджета для улучшения результата.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="modal-target" class="modal-overlay-hidden">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Настройка таргета FB/INST</h2>
+                <p class="modal-description">Наши услуги по настройке таргетированной рекламы включают:</p>
+                <ul>
+                  <li>Анализ вашей целевой аудитории и её предпочтений.</li>
+                  <li>Создание эффективных рекламных креативов.</li>
+                  <li>Запуск кампаний с оптимизацией для повышения рентабельности.</li>
+                  <li>Контроль и корректировка в реальном времени.</li>
+                </ul>            </div>
+        </div>
+        <div id="modal-page-setup" class="modal-overlay-hidden">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Подготовка страницы</h2>
+                <p class="modal-description">Наши услуги по подготовке страницы включают:</p>
+          <ul>
+            <li>Проверку всех подключений (пиксели, метрики, аналитика).</li>
+            <li>Оценку и исправление элементов дизайна.</li>
+            <li>Анализ загрузки и корректности работы всех функций.</li>
+            <li>Оптимизацию контента для лучшего результата рекламы.</li>
+          </ul>
+            </div>
+        </div>
+        <div id="modal-page-branding" class="modal-overlay-hidden">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Брендинг</h2>
+                <p class="modal-description">Наши услуги включают:</p>
+                <ul>
+                  <li>Разработку логотипа и фирменного стиля.</li>
+                  <li>Подбор цветов, шрифтов и визуальной концепции.</li>
+                  <li>Создание уникального и запоминающегося образа бренда.</li>
+                  <li>Анализ целевой аудитории для точного соответствия имиджа.</li>
+                </ul>            </div>
+        </div>
+        <div id="modal-page-photo" class="modal-overlay-hidden">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Съёмка для рекламы</h2>
+                <p class="modal-description">Наши услуги включают:</p>
+                <ul>
+                  <li>Разработку уникальной концепции съёмки.</li>
+                  <li>Выбор локации для съемок.</li>
+                  <li>Написание сценария, соответствующего вашим целям.</li>
+                  <li>Профессиональную съемку с использованием качественного оборудования.</li>
+                </ul>            </div>
+        </div>
+        <div id="modal-page-website" class="modal-overlay-hidden">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 class="modal-title">Разработка сайтов</h2>
+                <p class="modal-description">Мы предлагаем полный цикл разработки сайтов, включая:</p>
+                <ul>
+                  <li>Проектирование структуры и архитектуры сайта.</li>
+                  <li>Создание уникального дизайна, соответствующего вашему бренду.</li>
+                  <li>Программирование функционала и оптимизацию для разных устройств.</li>
+                  <li>Запуск и тестирование сайта на различных платформах.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
     <div id="reviews" class="reviews-section">
         <h2 class="reviews-title" data-translate="reviews-title">Отзывы</h2>
         
