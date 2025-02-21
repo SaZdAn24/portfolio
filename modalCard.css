@@ -1,111 +1,43 @@
-/* Основные стили для модального окна */
+/* Затемняющий фон */
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
 }
 
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
+/* По умолчанию скрыто */
+.modal-overlay-hidden {
+    display: none;
 }
 
+/* Контент модального окна */
 .modal-content {
-    background: #1c1c1c;
-    color: #f5f5f5;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
-    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    max-width: 600px;
     width: 90%;
-    text-align: center;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     position: relative;
-    animation: fadeIn 0.3s ease-out;
+    text-align: center;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
+/* Кнопка закрытия */
 .modal-close {
     position: absolute;
     top: 10px;
-    right: 15px;
-    background: none;
+    right: 10px;
+    background: transparent;
     border: none;
-    font-size: 24px;
-    color: #f5f5f5;
+    font-size: 30px;
     cursor: pointer;
-    transition: opacity 0.3s;
 }
-
-.modal-close:hover {
-    opacity: 0.7;
-}
-
-.modal-icon {
-    width: 50px;
-    margin-bottom: 1rem;
-}
-
-.modal-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.modal-description {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #ccc;
-}
-
-.modal-extra {
-    font-size: 0.9rem;
-    color: #aaa;
-    margin-top: 1rem;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-ul li {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    border-radius: 6px;
-    margin-bottom: 5px;
-}
-
-.modal-cta {
-    background: #fff;
-    color: #1c1c1c;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s, color 0.3s;
-    margin-top: 1rem;
-}
-
-.modal-cta:hover {
-    background: #ccc;
-    color: #1c1c1c;
-}
-.modal-overlay-hidden { display: none; }
-    .modal-overlay-visible { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
-    .modal-content { background: white; padding: 20px; margin: 100px auto; width: 50%; border-radius: 10px; }
-    .modal-close { cursor: pointer; background: none; border: none; font-size: 24px; }

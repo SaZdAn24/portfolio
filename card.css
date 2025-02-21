@@ -1,7 +1,7 @@
 .first {
-    background-color: #eaeaea;
+    background-color: #ffffff;
     max-width: 100%;
-    min-height: 100vh; 
+    min-height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -9,30 +9,39 @@
 .container-card {
     max-width: 100%;
     margin: 80px auto;
-    padding: 0 15px;
-    background-color: #eaeaea;
+    padding: 0 2rem; /* Используем rem для улучшенной адаптивности */
+    background-color: hsl(0, 0%, 100%);
     max-width: 1200px;
 }
 
+
 .page-title {
     text-align: center;
-    font-size: 36px;
+    font-size: 38px; /* Увеличиваем размер шрифта */
     font-weight: 700;
     margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
 }
 
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     gap: 32px;
 }
 
 .card {
-    background-color: #eaeaea;
+    background-color: #ffffff;
     text-align: center;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card-icon {
@@ -49,27 +58,29 @@
 }
 
 .card-text {
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 15px; /* Немного увеличим шрифт */
+    line-height: 1.6; /* Увеличим межстрочный интервал */
     color: #666666;
     margin-bottom: 20px;
 }
 
 .card-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.6rem 1.2rem; /* Используем rem */
     font-size: 14px;
     font-weight: 600;
     color: #0e0e0e;
-    background-color: #eaeaea;
+    background-color: #ffffff;
     border: none;
     border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .card-button:hover {
-    background-color: #0056b3;
+    background-color: #afafaf;
+    transform: scale(1.05);
 }
 
 .footer {
@@ -109,5 +120,20 @@
     .card-button {
         padding: 8px 15px;
         font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-button {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 11px;
     }
 }
