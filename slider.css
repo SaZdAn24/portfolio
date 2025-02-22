@@ -1,116 +1,98 @@
 .reviews-section {
-    background-color: #FFFFFF;
-    max-width: 800px;
-    margin: 100px auto;
-    text-align: center;
-    font-family: sans-serif;
-  }
-  
-  .reviews-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 40px;
-  }
-  
-  .slider-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .arrow {
-    font-size: 24px;
-    color: #CCCCCC;
-    padding: 0 16px;
-    cursor: pointer;
-  }
-  
-  .arrow:hover {
-    color: #000000;
-  }
-  
-  .slide {
-    text-align: center;
-    width: 100%;
-  }
-  
-  .avatar img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 4px solid #FFFFFF;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 24px;
-    margin-top: 50px;
-  }
-  
-  .review-text p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #333333;
-    margin: 0;
-  }
-  
-  .user-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
-    margin: 8px 0 0 0;
-  }
-  
-  .user-position {
-    font-size: 14px;
-    color: #666666;
-  }
-  
-  .indicators {
-    margin-top: 16px;
-  }
-  
-  .dot {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    background-color: #CCCCCC;
-    border-radius: 50%;
-    margin: 0 8px;
-    cursor: pointer;
-  }
-  .slide {
-    display: none; /* Слайды скрыты по умолчанию */
-  }
-  
-  .slide.active {
-    display: block; /* Отображаем активный слайд */
-  }
-  
-  .dot.active {
-    background-color: #000000;
-  }
-  
-  .dot:hover {
-    background-color: #000000;
-  }
-  
-  @media (max-width: 768px) {
-    .reviews-title {
-      font-size: 28px;
-    }
-  
-    .review-text p {
-      font-size: 14px;
-    }
-  
-    .user-name {
-      font-size: 16px;
-    }
-  
-    .user-position {
-      font-size: 12px;
-    }
-  
-    .arrow {
-      font-size: 20px;
-    }
-  }
-  
+  background-color: #FFFFFF;
+  max-width: 800px;
+  margin: 100px auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.reviews-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 24px;
+  color: #CCCCCC;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.arrow:hover {
+  color: #000000;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  margin-top: 50px;
+}
+
+.review-text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin: 0;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin: 8px 0 0 0;
+}
+
+.user-position {
+  font-size: 14px;
+  color: #666666;
+}
+
+.indicators {
+  margin-top: 16px;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #CCCCCC;
+  border-radius: 50%;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #000000;
+}
+
+.dot:hover {
+  background-color: #000000;
+}
