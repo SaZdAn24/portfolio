@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSlide = 0;
   const slides = document.querySelectorAll('.slide');
   const dots = document.querySelectorAll('.dot');
-  const intervalTime = 1500; 
+  const intervalTime = 4000; 
 
   const showSlide = (index) => {
       if (index >= slides.length) {
