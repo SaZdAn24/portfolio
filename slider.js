@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSlide = 0;
   const slides = document.querySelectorAll('.slide');
   const dots = document.querySelectorAll('.dot');
-  const intervalTime = 1500; // Интервал автопрокрутки в миллисекундах
+  const intervalTime = 1500; 
 
   const showSlide = (index) => {
       if (index >= slides.length) {
