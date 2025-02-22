@@ -2,32 +2,42 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSlide = 0;
   const slides = document.querySelectorAll('.slide');
   const dots = document.querySelectorAll('.dot');
-  const leftArrow = document.querySelector('.left-arrow');
-  const rightArrow = document.querySelector('.right-arrow');
+  const intervalTime = 1500; // Интервал автопрокрутки в миллисекундах
 
   const showSlide = (index) => {
+      if (index >= slides.length) {
+          currentSlide = 0;
+      } else if (index < 0) {
+          currentSlide = slides.length - 1;
+      } else {
+          currentSlide = index;
+      }
       slides.forEach((slide, i) => {
-          slide.classList.toggle('active', i === index);
+          slide.style.display = i === currentSlide ? 'block' : 'none';
       });
       dots.forEach((dot, i) => {
-          dot.classList.toggle('active', i === index);
+          dot.classList.toggle('active', i === currentSlide);
       });
-      currentSlide = index;
   };
 
-  leftArrow.addEventListener('click', () => {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide(currentSlide);
+  document.querySelector('.left-arrow').addEventListener('click', () => {
+      showSlide(currentSlide - 1);
   });
 
-  rightArrow.addEventListener('click', () => {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
+  document.querySelector('.right-arrow').addEventListener('click', () => {
+      showSlide(currentSlide + 1);
   });
 
   dots.forEach((dot, i) => {
-      dot.addEventListener('click', () => showSlide(i));
+      dot.addEventListener('click', () => {
+          showSlide(i);
+      });
   });
+
+  // Автопрокрутка слайдов
+  setInterval(() => {
+      showSlide(currentSlide + 1);
+  }, intervalTime);
 
   showSlide(currentSlide);
 });
