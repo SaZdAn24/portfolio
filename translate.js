@@ -2,7 +2,6 @@ const translations = {
     "ru": {
         "page-title": "Сайт Daniil Sazanovich",
         "alt-logo": "Логотип",
-        "menu-toggle": "Меню",
         "nav-services": "Услуги",
         "nav-reviews": "Отзывы",
         "nav-cases": "Кейсы",
@@ -13,7 +12,7 @@ const translations = {
         "name": "Daniil<br>Sazanovich",
         "subtitle": "Таргетолог-Маркетолог",
         "info-text": "Я профессионал с более чем 5-летним опытом работы в<br>таргетированной рекламе. За это время я успешно реализовал<br>более 20 проектов в самых разных нишах.<br>Моя специализация — настройка и ведение рекламы в Facebook и Instagram.<br>Я помогаю бизнесам привлекать клиентов, повышать продажи и<br>достигать своих целей с помощью эффективных рекламных кампаний.",
-        "close-menu": "Закрыть",
+       
         "icon-services": "🛠️",
         "icon-reviews": "📝",
         "icon-cases": "📁",
@@ -48,7 +47,6 @@ const translations = {
         "alt-branding-icon": "Звезда",
         "alt-shooting-icon": "Камера",
         "alt-site-icon": "Монитор с устройствами",
-        "modal-close": "Закрыть",
         "modal-audit-title": "Аудит рекламного кабинета",
         "modal-audit-description": "Полный аудит рекламного кабинета поможет выявить слабые места, повысить эффективность кампаний и сократить ненужные расходы.",
         "modal-audit-point1": "<strong>Анализ структуры рекламных кампаний:</strong> проверка логики организации, стратегий ставок и распределения бюджета.",
@@ -147,7 +145,6 @@ const translations = {
     "pl": {
         "page-title": "Strona Daniila Sazanovicha",
         "alt-logo": "Logo",
-        "menu-toggle": "Menu",
         "nav-services": "Usługi",
         "nav-reviews": "Opinie",
         "nav-cases": "Case studies",
@@ -193,7 +190,6 @@ const translations = {
         "alt-branding-icon": "Gwiazda",
         "alt-shooting-icon": "Aparat",
         "alt-site-icon": "Monitor z urządzeniami",
-        "modal-close": "Zamknij",
         "modal-audit-title": "Audyt konta reklamowego",
         "modal-audit-description": "Pełny audyt konta reklamowego pomoże zidentyfikować słabe punkty, zwiększyć skuteczność kampanii i zmniejszyć niepotrzebne wydatki.",
         "modal-audit-point1": "<strong>Analiza struktury kampanii reklamowych:</strong> sprawdzenie logiki organizacji, strategii stawek i dystrybucji budżetu.",
@@ -311,6 +307,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const savedLang = localStorage.getItem("selectedLanguage") || "ru";
     switchLanguage(savedLang);
 
-    document.querySelector("[data-translate='lang-ru']").addEventListener("click", () => switchLanguage("ru"));
-    document.querySelector("[data-translate='lang-pl']").addEventListener("click", () => switchLanguage("pl"));
+    // Обработчики для кнопок переключения языка
+    document.querySelector("[data-translate='lang-ru']").addEventListener("click", (e) => {
+        e.preventDefault(); // Предотвращаем переход по ссылке
+        switchLanguage("ru");
+    });
+
+    document.querySelector("[data-translate='lang-pl']").addEventListener("click", (e) => {
+        e.preventDefault(); // Предотвращаем переход по ссылке
+        switchLanguage("pl");
+    });
+
+    // Обработчики для кнопок в меню
+    document.querySelector("[data-translate='menu-lang-ru']").addEventListener("click", (e) => {
+        e.preventDefault(); // Предотвращаем переход по ссылке
+        switchLanguage("ru");
+    });
+
+    document.querySelector("[data-translate='menu-lang-pl']").addEventListener("click", (e) => {
+        e.preventDefault(); // Предотвращаем переход по ссылке
+        switchLanguage("pl");
+    });
 });
