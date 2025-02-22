@@ -107,4 +107,52 @@
 
 .close-button-thank:hover {
     color: #000;
+}@media (max-width: 768px) {
+    .contact-form {
+        padding: 30px 20px;
+        max-width: 400px;
+    }
+
+    .contact-form h3 {
+        font-size: 18px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        width: 60%;
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 30px 15px;
+    }
+
+    .contact-form {
+        padding: 25px 15px;
+        max-width: 100%;
+    }
+
+    .contact-form h3 {
+        font-size: 16px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
 }
