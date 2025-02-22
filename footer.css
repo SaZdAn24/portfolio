@@ -11,11 +11,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-right: 40px;
   }
   
   .footer-links {
     display: flex;
     flex-direction: column;
+    padding-left: 40px;
   }
   
   .footer-links a {

@@ -19,12 +19,11 @@
 
 </head>
 <body>
-
     <header>
         <div class="logo">
-            <img src="./imeges/logo.jpeg" alt="Логотип">
+            <img src="./imeges/logo.jpeg" alt="Логотип" data-translate="alt-logo">
         </div>
-        <div class="menu-toggle">&#9776;</div> 
+        <div class="menu-toggle" data-translate="menu-toggle">&#9776;</div>
         <nav>
             <a href="#services" data-translate="nav-services">Услуги</a>
             <a href="#reviews" data-translate="nav-reviews">Отзывы</a>
@@ -36,6 +35,7 @@
             </div>
         </nav>
     </header>
+
     <div class="container">
         <div class="left-column">
             <div class="name" data-translate="name">Daniil<br>Sazanovich</div>
@@ -43,7 +43,7 @@
         </div>
         <div class="right-column">
             <div class="info-text" data-translate="info-text">
-                Я профессионал с более чем 5-летним опытом работы в<br> 
+                Я профессионал с более чем 5-летним опытом работы в<br>
                 таргетированной рекламе. За это время я успешно реализовал<br>
                 более 20 проектов в самых разных нишах.<br>
                 Моя специализация — настройка и ведение рекламы в Facebook и Instagram.<br>
@@ -54,345 +54,352 @@
     </div>
 
     <div class="menu">
-        <div class="close-menu">&#10005;</div>
+        <div class="close-menu" data-translate="close-menu">&#10005;</div>
         <div class="logo">
-            <img src="./imeges/logo.jpeg" alt="Логотип">
+            <img src="./imeges/logo.jpeg" alt="Логотип" data-translate="alt-logo">
         </div>
         <ul class="menu-list">
-            <li><i>🛠️</i><a href="#services" data-translate="menu-services">Услуги</a></li>
-            <li><i>📝</i><a href="#reviews" data-translate="menu-reviews">Отзывы</a></li>
-            <li><i>📁</i><a href="#cases" data-translate="menu-cases">Кейсы</a></li>
-            <li><i>🔄</i><a href="#trial" data-translate="menu-trial">Тестовый период</a></li>
-            <li><i>❓</i><a href="#question" data-translate="menu-question">Частые вопросы</a></li>
+            <li><i data-translate="icon-services">🛠️</i><a href="#services" data-translate="menu-services">Услуги</a></li>
+            <li><i data-translate="icon-reviews">📝</i><a href="#reviews" data-translate="menu-reviews">Отзывы</a></li>
+            <li><i data-translate="icon-cases">📁</i><a href="#cases" data-translate="menu-cases">Кейсы</a></li>
+            <li><i data-translate="icon-trial">🔄</i><a href="#trial" data-translate="menu-trial">Тестовый период</a></li>
+            <li><i data-translate="icon-question">❓</i><a href="#question" data-translate="menu-question">Частые вопросы</a></li>
         </ul>
 
         <div class="divider"></div>
 
         <ul class="menu-list">
-            <li><i>🇷🇺</i><a href="#" data-translate="menu-lang-ru">Ru</a></li>
-            <li><i>🇵🇱</i><a href="#" data-translate="menu-lang-pl">Pl</a></li>
+            <li><i data-translate="icon-lang-ru">🇷🇺</i><a href="#" data-translate="menu-lang-ru">Ru</a></li>
+            <li><i data-translate="icon-lang-pl">🇵🇱</i><a href="#" data-translate="menu-lang-pl">Pl</a></li>
         </ul>
     </div>
+
     <div class="first">
         <div id="services" class="container-card">
             <h1 class="page-title" data-translate="services-title">Услуги</h1>
             <div class="card-grid">
                 <div class="card" data-modal="modal-audit">
-                    <img src="./imeges/card/eye.png" alt="Монитор с глазом" class="card-icon">
+                    <img src="./imeges/card/eye.png" alt="Монитор с глазом" class="card-icon" data-translate="alt-audit-icon">
                     <h2 class="card-title" data-translate="card-audit-title">Аудит рекламного<br> кабинета</h2>
                     <p class="card-text" data-translate="card-audit-text">Включает анализ структуры кампаний,<br> эффективности таргетинга, креативов и<br> настроек бюджета.</p>
-                    <button class="card-button" data-modal-open>Подробнее</button>
+                    <button class="card-button" data-modal-open data-translate="card-button">Подробнее</button>
                 </div>
                 <div class="card" data-modal="modal-target">
-                    <img src="./imeges/card/aim.png" alt="Профиль человека с кругами" class="card-icon">
+                    <img src="./imeges/card/aim.png" alt="Профиль человека с кругами" class="card-icon" data-translate="alt-target-icon">
                     <h2 class="card-title" data-translate="card-target-title">Настройка таргета FB<br> INST</h2>
                     <p class="card-text" data-translate="card-target-text">Включает анализ целевой аудитории,<br> разработку креативов, запуск рекламных кампаний<br> и их оптимизацию.</p>
-                    <button class="card-button" data-modal-open>Подробнее</button>
+                    <button class="card-button" data-modal-open data-translate="card-button">Подробнее</button>
                 </div>
                 <div class="card" data-modal="modal-page-setup">
-                    <img src="./imeges/card/lightning.png" alt="Молния" class="card-icon">
+                    <img src="./imeges/card/lightning.png" alt="Молния" class="card-icon" data-translate="alt-prep-icon">
                     <h2 class="card-title" data-translate="card-prep-title">Подготовка страницы к<br> запуску рекламы</h2>
                     <p class="card-text" data-translate="card-prep-text">Включает проверку, что все элементы<br> подключены и работают корректно.</p>
-                    <button class="card-button" data-modal-open>Подробнее</button>
+                    <button class="card-button" data-modal-open data-translate="card-button">Подробнее</button>
                 </div>
                 <div class="card" data-modal="modal-page-branding">
-                    <img src="./imeges/card/star.png" alt="Звезда" class="card-icon">
+                    <img src="./imeges/card/star.png" alt="Звезда" class="card-icon" data-translate="alt-branding-icon">
                     <h2 class="card-title" data-translate="card-branding-title">Branding</h2>
                     <p class="card-text" data-translate="card-branding-text">Создание визуального образа<br> на основе маркетинговых исследований.</p>
-                    <button class="card-button" data-modal-open>Подробнее</button>
+                    <button class="card-button" data-modal-open data-translate="card-button">Подробнее</button>
                 </div>
                 <div class="card" data-modal="modal-page-photo">
-                    <img src="./imeges/card/camera.png" alt="Камера" class="card-icon">
+                    <img src="./imeges/card/camera.png" alt="Камера" class="card-icon" data-translate="alt-shooting-icon">
                     <h2 class="card-title" data-translate="card-shooting-title">Съёмка для рекламы</h2>
                     <p class="card-text" data-translate="card-shooting-text">Разработка концепции, подбор<br> локации и профессиональная съёмка.</p>
-                    <button class="card-button" data-modal-open>Подробнее</button>
+                    <button class="card-button" data-modal-open data-translate="card-button">Подробнее</button>
                 </div>
                 <div class="card" data-modal="modal-page-website">
-                    <img src="./imeges/card/gadgets.png" alt="Монитор с устройствами" class="card-icon">
+                    <img src="./imeges/card/gadgets.png" alt="Монитор с устройствами" class="card-icon" data-translate="alt-site-icon">
                     <h2 class="card-title" data-translate="card-site-title">Сайт</h2>
                     <p class="card-text" data-translate="card-site-text">Полный цикл работ: от разработки структуры до финального запуска.</p>
-                    <button class="card-button" data-modal-open>Подробнее</button>
+                    <button class="card-button" data-modal-open data-translate="card-button">Подробнее</button>
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- Модальные окна -->
-    <div class="modals">
-        <div id="modal-audit" class="modal-overlay modal-overlay-hidden">
-            <div class="modal-content">
-                <button class="modal-close">&times;</button>
-                <img src="./imeges/card/eye.png" alt="Монитор с глазом" class="card-icon">
-                <h2 class="modal-title">Аудит рекламного кабинета</h2>
-                <p class="modal-description">
-                    Полный аудит рекламного кабинета поможет выявить слабые места, повысить эффективность кампаний и сократить ненужные расходы.
-                </p>
-                <ul>
-                    <p><strong>Анализ структуры рекламных кампаний:</strong> проверка логики организации, стратегий ставок и распределения бюджета.</p>
-                    <p><strong>Оценка эффективности таргетинга:</strong> аудит настроек целевой аудитории, ретаргетинга и look-alike сегментов.</p>
-                    <p><strong>Разбор креативов и объявлений:</strong> анализ визуального контента, текста и их соответствия аудитории.</p>
-                    <p><strong>Оценка бюджета и стратегий ставок:</strong> проверка эффективности распределения средств и поиск оптимальных решений.</p>
-                    <p><strong>Выводы и рекомендации:</strong> детальный отчет с анализом ошибок и практическими рекомендациями.</p>
-                </ul>
-                <p class="modal-price"><strong>Стоимость:</strong> 300 zł</p>
-                <p class="modal-time"><strong>Срок выполнения:</strong> 1-2 дня</p>
-            </div>
-        </div>
-        
-        <div id="modal-target" class="modal-overlay modal-overlay-hidden">
-            <div class="modal-content">
-                <button class="modal-close">&times;</button>
-                <img src="./imeges/card/aim.png" alt="Профиль человека с кругами" class="card-icon">
-                <h2 class="modal-title">Настройка таргетированной рекламы FB/INST</h2>
-                <p class="modal-description">
-                    Эффективная настройка рекламы в Facebook и Instagram для привлечения клиентов, увеличения продаж и узнаваемости бренда.
-                </p>
-                <ul>
-                    <p><strong>Анализ целевой аудитории:</strong> изучение предпочтений, поведения и демографии вашей ЦА.</p>
-                    <p><strong>Разработка креативов:</strong> создание цепляющих изображений, видео и рекламных текстов.</p>
-                    <p><strong>Настройка кампаний:</strong> подбор оптимального формата рекламы, тестирование гипотез.</p>
-                    <p><strong>Оптимизация:</strong> анализ ключевых метрик, корректировка бюджета и стратегии.</p>
-                    <p><strong>Отчет и рекомендации:</strong> детальный анализ результатов и советы по улучшению.</p>
-                </ul>
-                <h3 class="modal-subtitle">Форматы сотрудничества:</h3>
-                <ul class="modal-pricing">
-                    <p><strong>Однократная настройка рекламы</strong> – 250 zł<br><span class="small-text">Разовая настройка и запуск без последующего ведения.</span></p>
-                    <p><strong>Полное ведение рекламы</strong> – 2500 zł / месяц<br><span class="small-text">Полный контроль, тестирование, оптимизация и масштабирование кампаний.</span></p>
-                </ul>
-                <p class="modal-time"><strong>Срок выполнения однократной настройки:</strong> 2-4 дня</p>
-            </div>
-        </div>
-        
-        <div id="modal-page-setup" class="modal-overlay modal-overlay-hidden">
-            <div class="modal-content">
-                <img src="./imeges/card/lightning.png" alt="Молния" class="card-icon">
-                <button class="modal-close">&times;</button>
-                <h2 class="modal-title">Подготовка страницы</h2>
-                <p class="modal-description">
-                    Комплексная подготовка вашей страницы для эффективной работы с рекламой и аналитикой.
-                </p>
-                <ul>
-                    <p><strong>Проверка подключений:</strong> аудит установки пикселей, метрик и аналитических сервисов для корректного отслеживания данных.</p>
-                    <p><strong>Анализ дизайна:</strong> оценка визуальных элементов, юзабилити и их соответствия рекламным стандартам.</p>
-                    <p><strong>Техническая проверка:</strong> тестирование скорости загрузки, работоспособности всех кнопок, форм и интеграций.</p>
-                    <p><strong>Оптимизация контента:</strong> улучшение текстов, изображений и видео для повышения конверсии.</p>
-                </ul>
-                <h3 class="modal-subtitle">Стоимость услуги:</h3>
-                <ul class="modal-pricing">
-                    <p><strong>Комплексная подготовка</strong> – 200 zł<br><span class="small-text">Полная проверка, исправление ошибок и доработка страницы.</span></p>
-                </ul>
-                <p class="modal-time"><strong>Срок выполнения:</strong> 1-2 дня</p>
-            </div>
-        </div>
-        
-        <div id="modal-page-branding" class="modal-overlay modal-overlay-hidden">
-            <div class="modal-content">
-                <img src="./imeges/card/star.png" alt="Звезда" class="card-icon">
-                <button class="modal-close">&times;</button>
-                <h2 class="modal-title">Брендинг</h2>
-                <p class="modal-description">
-                    Создание уникального фирменного стиля, который выделит ваш бренд и повысит его узнаваемость.
-                </p>
-                <ul>
-                    <p><strong>Разработка логотипа:</strong> создание индивидуального логотипа, отражающего концепцию и ценности бренда.</p>
-                    <p><strong>Фирменный стиль:</strong> подбор цветовой палитры, шрифтов и графических элементов для единого визуального образа.</p>
-                    <p><strong>Концепция бренда:</strong> формирование уникального позиционирования, отражающего ценности и миссию компании.</p>
-                    <p><strong>Анализ целевой аудитории:</strong> исследование предпочтений клиентов для создания релевантного и запоминающегося стиля.</p>
-                </ul>
-                <h3 class="modal-subtitle">Стоимость услуг:</h3>
-                <ul class="modal-pricing">
-                    <p><strong>Базовый брендинг</strong> – 500 zł<br><span class="small-text">Создание логотипа и базового фирменного стиля.</span></p>
-                    <p><strong>Полный брендинг</strong> – 1500 zł<br><span class="small-text">Разработка полного фирменного стиля, включая гайдбук и бренд-концепцию.</span></p>
-                </ul>
-                <p class="modal-time"><strong>Срок выполнения:</strong> 3-7 дней</p>
-            </div>
-        </div>
-        
-        <div id="modal-page-photo" class="modal-overlay modal-overlay-hidden">
-            <div class="modal-content">
-                <img src="./imeges/card/camera.png" alt="Камера" class="card-icon">
-                <button class="modal-close">&times;</button>
-                <h2 class="modal-title">Съёмка для рекламы</h2>
-                <p class="modal-description">
-                    Профессиональная фото- и видеосъёмка для эффективного продвижения вашего бренда.
-                </p>
-                <ul>
-                    <p><strong>Разработка концепции:</strong> создание уникальной идеи съемки, соответствующей вашему продукту и целевой аудитории.</p>
-                    <p><strong>Выбор локации:</strong> подбор идеального места для съемок, будь то студия, интерьер или уличная локация.</p>
-                    <p><strong>Написание сценария:</strong> проработка деталей съемочного процесса, раскадровка и постановка сцен.</p>
-                    <p><strong>Профессиональная съемка:</strong> использование качественного оборудования, работа с освещением и постобработка.</p>
-                </ul>
-                <h3 class="modal-subtitle">Форматы сотрудничества:</h3>
-                <ul class="modal-pricing">
-                    <p><strong>Фотосъёмка</strong> – 800 zł<br><span class="small-text">Профессиональные фотографии для рекламы, контента в соцсетях и сайтов.</span></p>
-                    <p><strong>Видеосъёмка</strong> – 1000 zł<br><span class="small-text">Создание рекламного видеоролика с монтажом и цветокоррекцией.</span></p>
-                </ul>
-                <p class="modal-time"><strong>Срок выполнения:</strong> 3-7 дней</p>
-            </div>
-        </div>
-        
-        <div id="modal-page-website" class="modal-overlay modal-overlay-hidden">
-            <div class="modal-content">
-                <img src="./imeges/card/gadgets.png" alt="Монитор с устройствами" class="card-icon">
-                <button class="modal-close">&times;</button>
-                <h2 class="modal-title">Разработка сайтов</h2>
-                <p class="modal-description">
-                    Полный цикл разработки сайтов — от идеи до запуска, с учетом всех современных требований и стандартов.
-                </p>
-                <ul>
-                    <p><strong>Проектирование:</strong> создание структуры, пользовательских сценариев и архитектуры сайта.</p>
-                    <p><strong>Уникальный дизайн:</strong> разработка визуального стиля, подбор цветовой палитры и шрифтов в соответствии с вашим брендом.</p>
-                    <p><strong>Программирование:</strong> реализация функционала, адаптивная верстка и оптимизация для всех устройств.</p>
-                    <p><strong>Тестирование и запуск:</strong> проверка работы на различных платформах, устранение ошибок и публикация в сети.</p>
-                </ul>
-                <h3 class="modal-subtitle">Форматы сотрудничества:</h3>
-                <ul class="modal-pricing">
-                    <p><strong>Лендинг (одностраничный сайт)</strong> – 1500 zł<br><span class="small-text">Идеальное решение для презентации продукта или услуги.</span></p>
-                    <p><strong>Корпоративный сайт</strong> – 3500 zł<br><span class="small-text">Полноценный сайт с несколькими разделами и адаптацией под ваш бизнес.</span></p>
-                    <p><strong>Интернет-магазин</strong> – 6000 zł<br><span class="small-text">Функциональный магазин с корзиной, оплатой и управлением товарами.</span></p>
-                </ul>
-                <p class="modal-time"><strong>Срок выполнения:</strong> 7-21 день</p>
-            </div>
-        </div>
-        
-    </div>
-    
-    <div id="reviews" class="reviews-section">
-        <h2 class="reviews-title" data-translate="reviews-title">Отзывы</h2>
-        
-        <div class="slider-container">
-            <div class="arrow left-arrow">&#60;</div>
-            <div class="slides">
-                <div class="slide active">
-                    <div class="avatar">
-                        <img src="./imeges/fitback/anna.jpeg" alt="User Avatar">
-                    </div>
-                    <div class="review-text">
-                        <p data-translate="review-text-1">Очень довольна настройкой рекламы от Даниила: 
-                            Не дурил голову, а просто дал заполнить бриф и взял материалы для креативов. 
-                            Не нужно было следить за тем, как настраивается реклама, 
-                            куда уходит бюджет, потому что прирост клиентов и подписчиков был очевиден. 
-                            За рамки моего бюджета не выходил, и все это четко в течение месяца. В общем, прирост клиентов был,
-                            реклама окупилась. Буду брать настройку еще, как только разберусь с новыми клиентами :)</p>
-                    </div>
-                    <div class="user-info">
-                        <p class="user-name" data-translate="review-name-1">Anna</p>
-                        <p class="user-position" data-translate="review-position-1">fitness trainer</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="avatar">
-                        <img src="./imeges/fitback/ sahiba.png" alt="User Avatar">
-                    </div>
-                    <div class="review-text">
-                        <p data-translate="review-text-2">
-                            Я благодарна за профессиональную и креативную рекламную компанию, 
-                            которую создал для меня. Ваши усилия помогли привлечь новых клиентов и 
-                            значительно увеличить узнаваемость моего бренда. Все мои ожидания были полностью удовлетворены, 
-                            а результаты превзошли все ожидания! Буду рада сотрудничать с вами и в будущем. Спасибо!
-                        </p>
-                    </div>
-                    <div class="user-info">
-                        <p class="user-name" data-translate="review-name-2">Sahiba</p>
-                        <p class="user-position" data-translate="review-position-2">Manicure master</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="avatar">
-                        <img src="./imeges/fitback/artem.jpeg" alt="User Avatar">
-                    </div>
-                    <div class="review-text">
-                        <p data-translate="review-text-3">Хочу выразить огромную благодарность за настройку моей рекламной кампании! 
-                            С первых дней я увидел приток новых клиентов, а качество лидов приятно удивило. 
-                            Всё было сделано профессионально, с учетом моих целей и аудитории. 
-                            Чувствуется глубокое понимание сферы и индивидуальный подход. 
-                            Однозначно рекомендую и планирую продолжать сотрудничество!</p>
-                    </div>
-                    <div class="user-info">
-                        <p class="user-name" data-translate="review-name-3">Artem</p>
-                        <p class="user-position" data-translate="review-position-3">Trener</p>
-                    </div>
-                </div>
-            </div>
-            <div class="arrow right-arrow">&#62;</div>
-        </div>
-        
-        <div class="indicators">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+
+  <!-- Модальные окна -->
+<div class="modals">
+    <!-- Модальное окно: Аудит рекламного кабинета -->
+    <div id="modal-audit" class="modal-overlay modal-overlay-hidden">
+        <div class="modal-content">
+            <button class="modal-close" data-translate="modal-close">&times;</button>
+            <img src="./imeges/card/eye.png" alt="Монитор с глазом" class="card-icon" data-translate="alt-audit-icon">
+            <h2 class="modal-title" data-translate="modal-audit-title">Аудит рекламного кабинета</h2>
+            <p class="modal-description" data-translate="modal-audit-description">
+                Полный аудит рекламного кабинета поможет выявить слабые места, повысить эффективность кампаний и сократить ненужные расходы.
+            </p>
+            <ul>
+                <p data-translate="modal-audit-point1"><strong>Анализ структуры рекламных кампаний:</strong> проверка логики организации, стратегий ставок и распределения бюджета.</p>
+                <p data-translate="modal-audit-point2"><strong>Оценка эффективности таргетинга:</strong> аудит настроек целевой аудитории, ретаргетинга и look-alike сегментов.</p>
+                <p data-translate="modal-audit-point3"><strong>Разбор креативов и объявлений:</strong> анализ визуального контента, текста и их соответствия аудитории.</p>
+                <p data-translate="modal-audit-point4"><strong>Оценка бюджета и стратегий ставок:</strong> проверка эффективности распределения средств и поиск оптимальных решений.</p>
+                <p data-translate="modal-audit-point5"><strong>Выводы и рекомендации:</strong> детальный отчет с анализом ошибок и практическими рекомендациями.</p>
+            </ul>
+            <p class="modal-price" data-translate="modal-audit-price"><strong>Стоимость:</strong> 300 zł</p>
+            <p class="modal-time" data-translate="modal-audit-time"><strong>Срок выполнения:</strong> 1-2 дня</p>
         </div>
     </div>
-    
-    <section id="question" class="faq-section">
-        <h2 class="faq-header" data-translate="faq-header">Частые вопросы</h2>
-    
-        <div class="faq-item">
-            <div class="faq-question">
-                <img src="./imeges/mark.svg" alt="Галочка" class="faq-icon">
-                <span class="question-text" data-translate="faq-question-1">Сколько нужно денег?</span>
-            </div>
-            <p class="faq-answer" data-translate="faq-answer-1">Сумма зависит от целей и аудитории. Минимальный бюджет для эффективной рекламы<br> 
-                начинается от 500-1000 злотых в месяц, но чем больше бюджет, тем лучше результаты.</p>
+
+    <!-- Модальное окно: Настройка таргетированной рекламы FB/INST -->
+    <div id="modal-target" class="modal-overlay modal-overlay-hidden">
+        <div class="modal-content">
+            <button class="modal-close" data-translate="modal-close">&times;</button>
+            <img src="./imeges/card/aim.png" alt="Профиль человека с кругами" class="card-icon" data-translate="alt-target-icon">
+            <h2 class="modal-title" data-translate="modal-target-title">Настройка таргетированной рекламы FB/INST</h2>
+            <p class="modal-description" data-translate="modal-target-description">
+                Эффективная настройка рекламы в Facebook и Instagram для привлечения клиентов, увеличения продаж и узнаваемости бренда.
+            </p>
+            <ul>
+                <p data-translate="modal-target-point1"><strong>Анализ целевой аудитории:</strong> изучение предпочтений, поведения и демографии вашей ЦА.</p>
+                <p data-translate="modal-target-point2"><strong>Разработка креативов:</strong> создание цепляющих изображений, видео и рекламных текстов.</p>
+                <p data-translate="modal-target-point3"><strong>Настройка кампаний:</strong> подбор оптимального формата рекламы, тестирование гипотез.</p>
+                <p data-translate="modal-target-point4"><strong>Оптимизация:</strong> анализ ключевых метрик, корректировка бюджета и стратегии.</p>
+                <p data-translate="modal-target-point5"><strong>Отчет и рекомендации:</strong> детальный анализ результатов и советы по улучшению.</p>
+            </ul>
+            <h3 class="modal-subtitle" data-translate="modal-target-subtitle">Форматы сотрудничества:</h3>
+            <ul class="modal-pricing">
+                <p data-translate="modal-target-price1"><strong>Однократная настройка рекламы</strong> – 250 zł<br><span class="small-text">Разовая настройка и запуск без последующего ведения.</span></p>
+                <p data-translate="modal-target-price2"><strong>Полное ведение рекламы</strong> – 2500 zł / месяц<br><span class="small-text">Полный контроль, тестирование, оптимизация и масштабирование кампаний.</span></p>
+            </ul>
+            <p class="modal-time" data-translate="modal-target-time"><strong>Срок выполнения однократной настройки:</strong> 2-4 дня</p>
         </div>
-    
-        <div class="faq-item">
-            <div class="faq-question">
-                <img src="./imeges/mark.svg" alt="Галочка" class="faq-icon">
-                <span class="question-text" data-translate="faq-question-2">Как долго длится процесс?</span>
-            </div>
-            <p class="faq-answer" data-translate="faq-answer-2">Процесс зависит от сложности задачи. Обычно он занимает от 1 до 3 рабочих дней.</p>
+    </div>
+
+    <!-- Модальное окно: Подготовка страницы -->
+    <div id="modal-page-setup" class="modal-overlay modal-overlay-hidden">
+        <div class="modal-content">
+            <button class="modal-close" data-translate="modal-close">&times;</button>
+            <img src="./imeges/card/lightning.png" alt="Молния" class="card-icon" data-translate="alt-prep-icon">
+            <h2 class="modal-title" data-translate="modal-prep-title">Подготовка страницы</h2>
+            <p class="modal-description" data-translate="modal-prep-description">
+                Комплексная подготовка вашей страницы для эффективной работы с рекламой и аналитикой.
+            </p>
+            <ul>
+                <p data-translate="modal-prep-point1"><strong>Проверка подключений:</strong> аудит установки пикселей, метрик и аналитических сервисов для корректного отслеживания данных.</p>
+                <p data-translate="modal-prep-point2"><strong>Анализ дизайна:</strong> оценка визуальных элементов, юзабилити и их соответствия рекламным стандартам.</p>
+                <p data-translate="modal-prep-point3"><strong>Техническая проверка:</strong> тестирование скорости загрузки, работоспособности всех кнопок, форм и интеграций.</p>
+                <p data-translate="modal-prep-point4"><strong>Оптимизация контента:</strong> улучшение текстов, изображений и видео для повышения конверсии.</p>
+            </ul>
+            <h3 class="modal-subtitle" data-translate="modal-prep-subtitle">Стоимость услуги:</h3>
+            <ul class="modal-pricing">
+                <p data-translate="modal-prep-price"><strong>Комплексная подготовка</strong> – 200 zł<br><span class="small-text">Полная проверка, исправление ошибок и доработка страницы.</span></p>
+            </ul>
+            <p class="modal-time" data-translate="modal-prep-time"><strong>Срок выполнения:</strong> 1-2 дня</p>
         </div>
-    
-        <div class="faq-item">
-            <div class="faq-question">
-                <img src="./imeges/mark.svg" alt="Галочка" class="faq-icon">
-                <span class="question-text" data-translate="faq-question-3">Как измерить эффективность рекламы?</span>
-            </div>
-            <p class="faq-answer" data-translate="faq-answer-3">Эффективность рекламы можно измерить через ключевые метрики: количество кликов,<br> 
-                конверсий, стоимость за клик (CPC), стоимость за конверсию (CPA), а также через<br> 
-                анализ возврата инвестиций (ROI).</p>
+    </div>
+
+    <!-- Модальное окно: Брендинг -->
+    <div id="modal-page-branding" class="modal-overlay modal-overlay-hidden">
+        <div class="modal-content">
+            <button class="modal-close" data-translate="modal-close">&times;</button>
+            <img src="./imeges/card/star.png" alt="Звезда" class="card-icon" data-translate="alt-branding-icon">
+            <h2 class="modal-title" data-translate="modal-branding-title">Брендинг</h2>
+            <p class="modal-description" data-translate="modal-branding-description">
+                Создание уникального фирменного стиля, который выделит ваш бренд и повысит его узнаваемость.
+            </p>
+            <ul>
+                <p data-translate="modal-branding-point1"><strong>Разработка логотипа:</strong> создание индивидуального логотипа, отражающего концепцию и ценности бренда.</p>
+                <p data-translate="modal-branding-point2"><strong>Фирменный стиль:</strong> подбор цветовой палитры, шрифтов и графических элементов для единого визуального образа.</p>
+                <p data-translate="modal-branding-point3"><strong>Концепция бренда:</strong> формирование уникального позиционирования, отражающего ценности и миссию компании.</p>
+                <p data-translate="modal-branding-point4"><strong>Анализ целевой аудитории:</strong> исследование предпочтений клиентов для создания релевантного и запоминающегося стиля.</p>
+            </ul>
+            <h3 class="modal-subtitle" data-translate="modal-branding-subtitle">Стоимость услуг:</h3>
+            <ul class="modal-pricing">
+                <p data-translate="modal-branding-price1"><strong>Базовый брендинг</strong> – 500 zł<br><span class="small-text">Создание логотипа и базового фирменного стиля.</span></p>
+                <p data-translate="modal-branding-price2"><strong>Полный брендинг</strong> – 1500 zł<br><span class="small-text">Разработка полного фирменного стиля, включая гайдбук и бренд-концепцию.</span></p>
+            </ul>
+            <p class="modal-time" data-translate="modal-branding-time"><strong>Срок выполнения:</strong> 3-7 дней</p>
         </div>
-    </section>
+    </div>
+
+    <!-- Модальное окно: Съёмка для рекламы -->
+    <div id="modal-page-photo" class="modal-overlay modal-overlay-hidden">
+        <div class="modal-content">
+            <button class="modal-close" data-translate="modal-close">&times;</button>
+            <img src="./imeges/card/camera.png" alt="Камера" class="card-icon" data-translate="alt-shooting-icon">
+            <h2 class="modal-title" data-translate="modal-shooting-title">Съёмка для рекламы</h2>
+            <p class="modal-description" data-translate="modal-shooting-description">
+                Профессиональная фото- и видеосъёмка для эффективного продвижения вашего бренда.
+            </p>
+            <ul>
+                <p data-translate="modal-shooting-point1"><strong>Разработка концепции:</strong> создание уникальной идеи съемки, соответствующей вашему продукту и целевой аудитории.</p>
+                <p data-translate="modal-shooting-point2"><strong>Выбор локации:</strong> подбор идеального места для съемок, будь то студия, интерьер или уличная локация.</p>
+                <p data-translate="modal-shooting-point3"><strong>Написание сценария:</strong> проработка деталей съемочного процесса, раскадровка и постановка сцен.</p>
+                <p data-translate="modal-shooting-point4"><strong>Профессиональная съемка:</strong> использование качественного оборудования, работа с освещением и постобработка.</p>
+            </ul>
+            <h3 class="modal-subtitle" data-translate="modal-shooting-subtitle">Форматы сотрудничества:</h3>
+            <ul class="modal-pricing">
+                <p data-translate="modal-shooting-price1"><strong>Фотосъёмка</strong> – 800 zł<br><span class="small-text">Профессиональные фотографии для рекламы, контента в соцсетях и сайтов.</span></p>
+                <p data-translate="modal-shooting-price2"><strong>Видеосъёмка</strong> – 1000 zł<br><span class="small-text">Создание рекламного видеоролика с монтажом и цветокоррекцией.</span></p>
+            </ul>
+            <p class="modal-time" data-translate="modal-shooting-time"><strong>Срок выполнения:</strong> 3-7 дней</p>
+        </div>
+    </div>
+
+    <!-- Модальное окно: Разработка сайтов -->
+    <div id="modal-page-website" class="modal-overlay modal-overlay-hidden">
+        <div class="modal-content">
+            <button class="modal-close" data-translate="modal-close">&times;</button>
+            <img src="./imeges/card/gadgets.png" alt="Монитор с устройствами" class="card-icon" data-translate="alt-site-icon">
+            <h2 class="modal-title" data-translate="modal-site-title">Разработка сайтов</h2>
+            <p class="modal-description" data-translate="modal-site-description">
+                Полный цикл разработки сайтов — от идеи до запуска, с учетом всех современных требований и стандартов.
+            </p>
+            <ul>
+                <p data-translate="modal-site-point1"><strong>Проектирование:</strong> создание структуры, пользовательских сценариев и архитектуры сайта.</p>
+                <p data-translate="modal-site-point2"><strong>Уникальный дизайн:</strong> разработка визуального стиля, подбор цветовой палитры и шрифтов в соответствии с вашим брендом.</p>
+                <p data-translate="modal-site-point3"><strong>Программирование:</strong> реализация функционала, адаптивная верстка и оптимизация для всех устройств.</p>
+                <p data-translate="modal-site-point4"><strong>Тестирование и запуск:</strong> проверка работы на различных платформах, устранение ошибок и публикация в сети.</p>
+            </ul>
+            <h3 class="modal-subtitle" data-translate="modal-site-subtitle">Форматы сотрудничества:</h3>
+            <ul class="modal-pricing">
+                <p data-translate="modal-site-price1"><strong>Лендинг (одностраничный сайт)</strong> – 1500 zł<br><span class="small-text">Идеальное решение для презентации продукта или услуги.</span></p>
+                <p data-translate="modal-site-price2"><strong>Корпоративный сайт</strong> – 3500 zł<br><span class="small-text">Полноценный сайт с несколькими разделами и адаптацией под ваш бизнес.</span></p>
+                <p data-translate="modal-site-price3"><strong>Интернет-магазин</strong> – 6000 zł<br><span class="small-text">Функциональный магазин с корзиной, оплатой и управлением товарами.</span></p>
+            </ul>
+            <p class="modal-time" data-translate="modal-site-time"><strong>Срок выполнения:</strong> 7-21 день</p>
+        </div>
+    </div>
+</div>
+  <!-- Отзывы -->
+<div id="reviews" class="reviews-section">
+    <h2 class="reviews-title" data-translate="reviews-title">Отзывы</h2>
+    
+    <div class="slider-container">
+        <div class="arrow left-arrow" data-translate="left-arrow">&#60;</div>
+        <div class="slides">
+            <!-- Слайд 1 -->
+            <div class="slide active">
+                <div class="avatar">
+                    <img src="./imeges/fitback/anna.jpeg" alt="User Avatar" data-translate="alt-avatar-1">
+                </div>
+                <div class="review-text">
+                    <p data-translate="review-text-1">Очень довольна настройкой рекламы от Даниила: 
+                        Не дурил голову, а просто дал заполнить бриф и взял материалы для креативов. 
+                        Не нужно было следить за тем, как настраивается реклама, 
+                        куда уходит бюджет, потому что прирост клиентов и подписчиков был очевиден. 
+                        За рамки моего бюджета не выходил, и все это четко в течение месяца. В общем, прирост клиентов был,
+                        реклама окупилась. Буду брать настройку еще, как только разберусь с новыми клиентами :)</p>
+                </div>
+                <div class="user-info">
+                    <p class="user-name" data-translate="review-name-1">Anna</p>
+                    <p class="user-position" data-translate="review-position-1">fitness trainer</p>
+                </div>
+            </div>
+
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <div class="avatar">
+                    <img src="./imeges/fitback/ sahiba.png" alt="User Avatar" data-translate="alt-avatar-2">
+                </div>
+                <div class="review-text">
+                    <p data-translate="review-text-2">
+                        Я благодарна за профессиональную и креативную рекламную компанию, 
+                        которую создал для меня. Ваши усилия помогли привлечь новых клиентов и 
+                        значительно увеличить узнаваемость моего бренда. Все мои ожидания были полностью удовлетворены, 
+                        а результаты превзошли все ожидания! Буду рада сотрудничать с вами и в будущем. Спасибо!
+                    </p>
+                </div>
+                <div class="user-info">
+                    <p class="user-name" data-translate="review-name-2">Sahiba</p>
+                    <p class="user-position" data-translate="review-position-2">Manicure master</p>
+                </div>
+            </div>
+
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <div class="avatar">
+                    <img src="./imeges/fitback/artem.jpeg" alt="User Avatar" data-translate="alt-avatar-3">
+                </div>
+                <div class="review-text">
+                    <p data-translate="review-text-3">Хочу выразить огромную благодарность за настройку моей рекламной кампании! 
+                        С первых дней я увидел приток новых клиентов, а качество лидов приятно удивило. 
+                        Всё было сделано профессионально, с учетом моих целей и аудитории. 
+                        Чувствуется глубокое понимание сферы и индивидуальный подход. 
+                        Однозначно рекомендую и планирую продолжать сотрудничество!</p>
+                </div>
+                <div class="user-info">
+                    <p class="user-name" data-translate="review-name-3">Artem</p>
+                    <p class="user-position" data-translate="review-position-3">Trener</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow right-arrow" data-translate="right-arrow">&#62;</div>
+    </div>
+    
+    <div class="indicators">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+    
+   <!-- Частые вопросы -->
+<section id="question" class="faq-section">
+    <h2 class="faq-header" data-translate="faq-header">Частые вопросы</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <img src="./imeges/mark.svg" alt="Галочка" class="faq-icon" data-translate="alt-faq-icon">
+            <span class="question-text" data-translate="faq-question-1">Сколько нужно денег?</span>
+        </div>
+        <p class="faq-answer" data-translate="faq-answer-1">Сумма зависит от целей и аудитории. Минимальный бюджет для эффективной рекламы<br> 
+            начинается от 500-1000 злотых в месяц, но чем больше бюджет, тем лучше результаты.</p>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <img src="./imeges/mark.svg" alt="Галочка" class="faq-icon" data-translate="alt-faq-icon">
+            <span class="question-text" data-translate="faq-question-2">Как долго длится процесс?</span>
+        </div>
+        <p class="faq-answer" data-translate="faq-answer-2">Процесс зависит от сложности задачи. Обычно он занимает от 1 до 3 рабочих дней.</p>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <img src="./imeges/mark.svg" alt="Галочка" class="faq-icon" data-translate="alt-faq-icon">
+            <span class="question-text" data-translate="faq-question-3">Как измерить эффективность рекламы?</span>
+        </div>
+        <p class="faq-answer" data-translate="faq-answer-3">Эффективность рекламы можно измерить через ключевые метрики: количество кликов,<br> 
+            конверсий, стоимость за клик (CPC), стоимость за конверсию (CPA), а также через<br> 
+            анализ возврата инвестиций (ROI).</p>
+    </div>
+</section>
+
+<!-- Форма -->
 <div class="form-container">
     <form id="contact-form" class="contact-form">
-        <h3>Онлайн-запись</h3>
-        <input type="text" name="from_name" placeholder="Ваше имя" required>
-        <input type="email" name="email" placeholder="Ваш email" required>
-        <input type="tel" name="phone" placeholder="Ваш телефон" required>
-        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+        <h3 data-translate="form-title">Онлайн-запись</h3>
+        <input type="text" name="from_name" placeholder="Ваше имя" data-translate="form-name-placeholder" required>
+        <input type="email" name="email" placeholder="Ваш email" data-translate="form-email-placeholder" required>
+        <input type="tel" name="phone" placeholder="Ваш телефон" data-translate="form-phone-placeholder" required>
+        <textarea name="message" placeholder="Ваше сообщение" data-translate="form-message-placeholder" required></textarea>
         <input type="hidden" name="to_name" value="She Wants Gdansk"> 
-        <button type="submit">Связаться</button>
+        <button type="submit" data-translate="form-submit-button">Связаться</button>
     </form>
 </div>
 
-<!-- Модальное окно подтверждения -->
-<div id="confirmation-modal" class="modal-thank">
-    <div class="modal-content-thank">
-        <span class="close-button-thank">&times;</span>
-        <h2>Спасибо!</h2>
-        <p>Ваше сообщение успешно отправлено. Мы скоро с вами свяжемся!</p>
-    </div>
-</div>
+<!-- Футер -->
 <footer class="footer">
     <div class="footer-container">
-      <div class="footer-links">
-        <a href="/privacy-policy">Политика конфиденциальности</a>
-        <a href="/cookie-policy">Использование cookies</a>
-      </div>
-      <div class="footer-contact">
-        <p>Контакты: info@example.com</p>
-        <p>Ваши права по защите данных</p>
-      </div>
+        <div class="footer-links">
+            <a href="/privacy-policy" data-translate="footer-privacy-policy">Политика конфиденциальности</a>
+            <a href="/cookie-policy" data-translate="footer-cookie-policy">Использование cookies</a>
+        </div>
+        <div class="footer-contact">
+            <p data-translate="footer-contact-email">Контакты: sazdaniil@gmail.com</p>
+            <p data-translate="footer-data-rights">Ваши права по защите данных</p>
+        </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025, Все права защищены</p>
+        <p data-translate="footer-copyright">© 2025, Все права защищены</p>
     </div>
-  </footer>
+</footer>
   
     <script src="scripts.js"></script>
     <script src="slider.js"></script>
-    <!-- <script src="translate.js"></script> -->
+    <script src="translate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
     <script src="formSubmitte.js"></script>
     <script src="modalCard.js"></script>
